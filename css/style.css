@@ -68,7 +68,7 @@ a{
     background: -moz-linear-gradient(-45deg,  #2af598 0%, #009efd 100%); 
     background: -webkit-linear-gradient(-45deg,  #2af598 0%,#009efd 100%); 
     background: linear-gradient(135deg,  #2af598 0%,#009efd 100%);
-    padding: 10px 20px !important;
+    padding: 12px 22px;
     border: 0;
     border-radius: 25px 0px;
     transition: box-shadow .4s ease-in-out;
