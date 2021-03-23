@@ -132,6 +132,7 @@ header.main_header{
 }
 
 header.mobile_header .header_row{
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
