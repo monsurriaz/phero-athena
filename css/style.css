@@ -134,6 +134,7 @@ header.main_header{
 header.mobile_header .header_row{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .mobile_header_logo{
