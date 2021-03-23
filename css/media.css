@@ -17,15 +17,12 @@
   }
 
   /* header */
-  header {
+  header.main_header {
     position: relative;
     padding: 13px 0px;
     background: url(../images/header-bg1.png) no-repeat left top/15.5%;
+    display: none;
   }
-
-  /* header .row{
-        justify-content: space-between;
-    } */
 
   nav .row {
     flex-direction: column;
@@ -50,8 +47,13 @@
   .btn {
     width: 130px;
     font-size: 18px;
-    padding: 10px 0px !important;
+    padding: 10px 0px;
     border-radius: 22px 0px;
+  }
+
+  .nav_btn {
+    width: 220px;
+    margin: 0 auto;
   }
 
   /* banner */
@@ -335,6 +337,13 @@
     text-align: center;
     margin-bottom: 0px;
   }
+
+  button#myBtn {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 13px;
+    font-size: 15px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -342,6 +351,9 @@
   .container {
     width: 540px;
     margin: 0 auto;
+  }
+  header.main_header {
+    display: none;
   }
   /* common css */
   .c_padding {
@@ -385,8 +397,13 @@
   .btn {
     width: 130px;
     font-size: 18px;
-    padding: 10px 0px !important;
+    padding: 10px 0px;
     border-radius: 22px 0px;
+  }
+
+  .nav_btn {
+    width: 220px;
+    margin: 0 auto;
   }
 
   /* banner */
@@ -671,6 +688,13 @@
     text-align: center;
     margin-bottom: 0px;
   }
+
+  button#myBtn {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 13px;
+    font-size: 15px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -678,6 +702,10 @@
   .container {
     max-width: 740px;
     margin: 0 auto;
+  }
+
+  .mobile_header {
+    display: none;
   }
   /* common css */
   .whatwedo,
@@ -718,7 +746,7 @@
     font-size: 17px;
     padding: 10px 8px !important;
     border-radius: 22px 0px;
-}
+  }
 
   /* banner */
   .b_top_bg {
@@ -776,7 +804,7 @@
   .projects {
     background: none;
     padding-bottom: 70px;
-}
+  }
 
   /* Achivement start */
 
@@ -784,12 +812,12 @@
     flex-basis: 55%;
     max-width: 55%;
     margin: 0 auto;
-}
+  }
 
-.av_text {
+  .av_text {
     padding-right: 0;
     padding-bottom: 40px;
-}
+  }
   .av_text h1 {
     font-size: 30px;
   }
@@ -800,28 +828,28 @@
   .achivement_right {
     flex-basis: 100%;
     max-width: 100%;
-}
+  }
 
-.achivement_icon_wrapper .icon{
+  .achivement_icon_wrapper .icon {
     text-align: center;
-}
+  }
 
-.acv_text{
+  .acv_text {
     padding-left: 20px;
-}
+  }
   /* dedicated section start */
   .dedicated_title_wrapper {
     flex-basis: 80%;
     max-width: 80%;
     margin: 0 auto;
-}
+  }
   .dedicated_title {
     margin-bottom: 50px;
   }
   .d_plan {
     padding: 20px 20px;
     margin: 10px;
-}
+  }
   .price_title h2 {
     margin-bottom: 3px;
     font-size: 35px;
@@ -835,7 +863,7 @@
   .plan_detail ul li {
     margin-bottom: 10px;
     font-size: 18px;
-}
+  }
   .order_btn {
     padding-top: 15px;
   }
@@ -869,7 +897,7 @@
   .footer_logo {
     flex-basis: 30%;
     max-width: 30%;
-}
+  }
   .social_link {
     margin-top: 20px;
   }
@@ -885,15 +913,18 @@
   .copy_right {
     margin-top: 30px;
     text-align: center;
-}
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
 
-    .container{
-        max-width: 960px;
-    }
+  .mobile_header {
+    display: none;
+  }
   /* common css */
   .whatwedo,
   .projects,
@@ -938,7 +969,7 @@
     top: -60px;
     left: -20px;
     width: 120px;
-}
+  }
   .b_left_bg {
     left: -128px;
   }
@@ -961,7 +992,7 @@
   }
   .single {
     padding: 33px 15px 40px;
-}
+  }
   .single .service_img {
     width: 93px;
   }
@@ -969,7 +1000,7 @@
     font-size: 21px;
   }
 
-  .single p{
+  .single p {
     line-height: 25px;
   }
 
@@ -983,16 +1014,16 @@
   .achivement_left {
     flex-basis: 40%;
     max-width: 40%;
-}
+  }
 
-.achivement_right {
+  .achivement_right {
     flex-basis: 58%;
     max-width: 58%;
-}
+  }
 
-.acv_text p {
+  .acv_text p {
     font-size: 16px;
-}
+  }
 
   /* dedicated section start */
 
@@ -1000,11 +1031,11 @@
     flex-basis: 70%;
     max-width: 70%;
     margin: 0 auto;
-}
-.d_plan {
+  }
+  .d_plan {
     padding: 25px 35px;
     margin: 10px 18px;
-}
+  }
   .price_title h2 {
     font-size: 40px;
   }
@@ -1026,5 +1057,11 @@
     width: 32px;
     height: 32px;
     font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mobile_header {
+    display: none;
   }
 }

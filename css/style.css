@@ -16,6 +16,10 @@ font-family: 'Poppins', sans-serif;
     -ms-box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -65,7 +69,7 @@ a{
     font-weight: 500;
     font-size: 18px;
     color: #fff !important;
-    background: -moz-linear-gradient(-45deg,  #2af598 0%, #009efd 100%); 
+    background: -moz-linear-gradient(-45deg,  #2af598 0%, #009dff 100%); 
     background: -webkit-linear-gradient(-45deg,  #2af598 0%,#009efd 100%); 
     background: linear-gradient(135deg,  #2af598 0%,#009efd 100%);
     padding: 12px 22px;
@@ -90,14 +94,51 @@ a{
 }
 /* common css end */
 
+/* scroll to top */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #009dff;
+    color: white; 
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all .4s;
+  }
+  
+  #myBtn:hover {
+    box-shadow: 0 12px 20px rgb(0 0 0 / 15%);
+  }
 
 
 /* header start */
-header{
+
+/* header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+} */
+
+header.main_header{
     padding: 20px 0 0;
     background: url(../images/header-bg1.png) no-repeat left top/11.5%;
 }
 
+header.mobile_header .header_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile_header_logo{
+    width: 30%;
+}
 
 .top_bg{
     position: absolute;
@@ -153,7 +194,52 @@ button:focus{
     outline: 0;
 }
 
-/* header start */
+/* mobile_header start */
+
+.mobile_header ul {
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 12px 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* header end */
 
 
 
