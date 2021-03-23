@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- header start -->
-    <header>
+    <header class="main_header">
       <div class="container">
         <div class="row">
           <div class="main_logo">
@@ -28,13 +28,13 @@
           <nav>
             <ul class="row">
               <li>
-                <a href="#">Home</a>
+                <a href="./index.html">Home</a>
               </li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#" class="btn">Contact Us</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#prices">Pricing</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#signup" class="btn">Contact Us</a></li>
             </ul>
           </nav>
         </div>
@@ -42,8 +42,33 @@
     </header>
     <!-- header end -->
 
+    <!-- mobile header start -->
+
+    <header class="mobile_header">
+      <div class="container">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <ul class="list-unstyled">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#prices">Pricing</a></li>
+            <li><a href="#signup" class="btn nav_btn">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="header_row">
+          <div class="mobile_header_logo">
+            <img src="./images/logo.png" alt="logo">
+          </div>
+          <span style="font-size:30px; cursor: pointer; color: #11C1D2" onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
+    </header>
+
     <!-- banner start -->
-    <section class="banner c_padding">
+    <section class="banner c_padding" id="about">
       <div class="b_top_bg">
         <img src="images/2.png" alt="athena" />
       </div>
@@ -76,7 +101,7 @@
     <!-- banner end -->
 
     <!-- what we do start -->
-    <section class="whatwedo c_padding">
+    <section class="whatwedo c_padding" id="services">
       <div class="container">
         <div class="row">
           <div class="whatwedo_text">
@@ -180,7 +205,7 @@
     <!-- Projects section start -->
 
     <!-- achivement start -->
-    <section class="achievement c_padding">
+    <section class="achievement c_padding" id="team">
       <div class="container">
         <div class="row">
           <div class="achivement_left">
@@ -272,7 +297,7 @@
     <!-- achivement start -->
 
     <!-- dedicated section start-->
-    <section class="dedicated c_padding">
+    <section class="dedicated c_padding" id="prices">
       <div class="container">
         <div class="row">
           <div class="dedicated_title_wrapper">
@@ -355,7 +380,7 @@
     <!-- dedicated section start-->
 
     <!-- Get in Touch -->
-    <section class="contact c_padding">
+    <section class="contact c_padding" id="signup">
       <div class="container">
         <div class="row">
           <div class="signup_wrapper">
@@ -383,7 +408,7 @@
         <div class="row">
           <div class="footer_logo">
             <!-- <div class="f_logo"> -->
-              <img class="f_logo" src="images/logo.png" alt="athena" />
+            <img class="f_logo" src="images/logo.png" alt="athena" />
             <!-- </div> -->
             <div class="social_link">
               <ul class="row">
@@ -444,12 +469,16 @@
           </div>
         </div>
         <div class="copy_right">
-          <p>
-            Copyright &copy 2021 Dhaka, BD. All rights reserved.
-          </p>
+          <p>Copyright &copy 2021 Dhaka, BD. All rights reserved.</p>
         </div>
       </div>
     </footer>
     <!--footer end-->
+
+    <!-- scroll to top btn -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+    <script src="https://kit.fontawesome.com/5adceddaa0.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
