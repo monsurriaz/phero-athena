@@ -355,6 +355,10 @@
   header.main_header {
     display: none;
   }
+
+  .header_row span {
+    font-size: 40px !important;
+  }
   /* common css */
   .c_padding {
     padding: 40px 0;
@@ -690,10 +694,8 @@
   }
 
   button#myBtn {
-    bottom: 15px;
-    right: 15px;
-    padding: 8px 13px;
-    font-size: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
   }
 }
 
