@@ -341,8 +341,8 @@
   button#myBtn {
     bottom: 15px;
     right: 15px;
-    padding: 8px 13px;
-    font-size: 15px;
+    padding: 10px 13px;
+    font-size: 14px;
   }
 }
 
@@ -694,7 +694,7 @@
   }
 
   button#myBtn {
-    padding: 10px 15px;
+    padding: 11px 14px;
     font-size: 16px;
   }
 }
